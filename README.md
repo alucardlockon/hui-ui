@@ -37,6 +37,7 @@ hui-table
 hui-date-picker
 hui-time-picker
 hui-number-picker
+hui-select
 
 ### infomation
 hui-info

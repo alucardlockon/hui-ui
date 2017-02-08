@@ -8,6 +8,6 @@ import router from './router'
 new Vue({
   el: '#app',
   router,
-  template: '<App/>',
+  template: '<App />',
   components: { App }
 })
