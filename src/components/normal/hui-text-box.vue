@@ -1,19 +1,26 @@
 <template>
-  <input type="text" v-bind:id="id" v-bind:name="name" v-bind:value="value">
+  <input 
+    type="text" 
+    class="form-control col-sm-3"
+    v-bind:id="dataId" 
+    v-bind:name="name" 
+    v-bind:value="dataValue"
+    >
 </template>
 
 <script>
 export default {
+  props: ['dataId', 'dataValue'],
   data () {
     return {
-      id: 'input',
-      name: 'name',
-      value: 'value'
+      name: 'name'
     }
   }
 }
 </script>
 
 <style scoped>
-
+input{
+  width: 20rem
+}
 </style>
