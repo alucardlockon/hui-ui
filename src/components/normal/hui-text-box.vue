@@ -2,15 +2,20 @@
   <input 
     type="text" 
     class="form-control col-sm-3"
-    v-bind:id="dataId" 
-    v-bind:name="name" 
-    v-bind:value="dataValue"
+    :id="dataId" 
+    :name="name" 
+    :value="value"
+    @input="$emit('input', $event.target.value)"
     >
 </template>
 
 <script>
 export default {
-  props: ['dataId', 'dataValue'],
+  props: {
+    dataId: String,
+    dataValue: String,
+    value: String
+  },
   data () {
     return {
       name: 'name'

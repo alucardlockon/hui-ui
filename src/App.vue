@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <!-- <router-view></router-view> -->
-    <hui-label data-id='label1' data-value='value'/>
-    <hui-text-box />
+    <hui-label data-id='label1' :data-value='labelText' />
+    {{labelText}}
+    <hui-text-box v-model='labelText' />
     <!-- <hui-table 
       dataurl="static/json/tabledata.json"
       page-size="10"
@@ -22,6 +23,12 @@ export default {
   name: 'app',
   components: {
     HuiTextBox, HuiLabel
+  },
+  props: [ ],
+  data () {
+    return {
+      labelText: 'hey'
+    }
   }
 }
 </script>
