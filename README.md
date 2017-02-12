@@ -26,28 +26,28 @@ npm test
 
 ## Components
 ### layout
-hui-col-sm-24
+hui-col-sm-24  
 
 ### normal
-hui-text-box
-hui-label
-hui-checkbox
-hui-button
-hui-table
-hui-date-picker
-hui-time-picker
-hui-number-picker
-hui-select
+hui-text-box  
+hui-label  
+hui-checkbox  
+hui-button  
+hui-table  
+hui-date-picker  
+hui-time-picker  
+hui-number-picker  
+hui-select  
 
-### infomation
-hui-info
-hui-alert
-hui-confirm
-hui-msg-box
+### information
+hui-info  
+hui-alert  
+hui-confirm  
+hui-msg-box  
 
 ### advance
-hui-tab
-hui-window
-hui-nav
-hui-tree
-
+hui-tab  
+hui-window  
+hui-nav  
+hui-tree  
+hui-form-field  
