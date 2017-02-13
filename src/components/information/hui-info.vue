@@ -8,8 +8,8 @@
 export default {
   props: {
     value: String,
-    hId: String,
-    hFor: String
+    id: String,
+    for: String
   },
   data () {
     return {

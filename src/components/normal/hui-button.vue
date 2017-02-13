@@ -1,25 +1,27 @@
 <template>
-  <button class="btn btn-default" :class="hClass" :id="hId"
-      :title="hValue?hValue:''" >
-      <span v-show="dIconPos === 'head'" class="glyphicon" :class="dIcon" ></span>
-      {{hValue}}
-      <span v-show="dIconPos === 'foot'" class="glyphicon" :class="dIcon" ></span>
-  </button>
-</template>
+  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
+    <button class="btn btn-default" :class="cssClass" :id="id"
+        :title="value?value:''" >
+        <span v-show="dIconPos === 'head'" class="glyphicon" :class="dIcon" ></span>
+        {{value}}
+        <span v-show="dIconPos === 'foot'" class="glyphicon" :class="dIcon" ></span>
+    </button>
+  </div>
+  </template>
 
 <script>
 export default {
   props: {
-    hValue: String,
-    hId: String,
-    hClass: String,
-    hIcon: String,
-    hIconPos: String
+    value: String,
+    id: String,
+    cssClass: String,
+    icon: String,
+    iconPos: String
   },
   data () {
     return {
-      dIconPos: (this.hIconPos && this.hIconPos === 'foot') ? 'foot' : 'head',
-      dIcon: 'glyphicon-' + (this.hIcon ? this.hIcon : '')
+      dIconPos: (this.iconPos && this.iconPos === 'foot') ? 'foot' : 'head',
+      dIcon: 'glyphicon-' + (this.icon ? this.icon : '')
     }
   }
 }

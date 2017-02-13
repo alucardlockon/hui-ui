@@ -1,8 +1,8 @@
 <template>
   <div class="form-group">
-    <hui-label :h-id="hLabelId" :value="dLabelText" :h-for="dId" />
-    <hui-text-box v-model="dTextBoxValue" :h-place-holder="dLabelText" :h-id="dId"
-      :h-name="dId" />
+    <hui-label :id="labelId" :value="dValue" :label-for="dId" />
+    <hui-text-box v-model="dTextBoxValue" :place-holder="dValue" :id="dId"
+      :name="dId" />
   </div>
 </template>
 
@@ -16,21 +16,21 @@ export default {
     HuiTextBox, HuiLabel
   },
   props: {
-    hId: String,
-    hLabelText: String
+    cid: String,
+    value: String
   },
   data () {
     return {
-      dId: this.hId ? this.hId : new Date().toLocaleDateString() + '_' + Math.random().toString(),
-      dLabelText: this.hLabelText ? this.hLabelText : new Date().toLocaleDateString() + '_' + Math.random().toString(),
+      dId: this.id ? this.id : new Date().toLocaleDateString() + '_' + Math.random().toString(),
+      dValue: this.value ? this.value : new Date().toLocaleDateString() + '_' + Math.random().toString(),
       dTextBoxValue: ''
     }
   },
   created: function () {
   },
   computed: {
-    hLabelId: function () {
-      return this.hId + '_label'
+    labelId: function () {
+      return this.id + '_label'
     }
   }
 }
@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 div{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 </style>

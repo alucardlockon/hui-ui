@@ -1,6 +1,6 @@
 <template>
 <div class="text-right col-xs-3 col-sm-2 col-md-1 col-lg-1">
-  <label class="text-muted control-label" :id="hId" :for="hFor" 
+  <label class="text-muted control-label" :id="id" :for="labelFor" 
       :title="value?value:''">
       {{value}}
   </label>
@@ -11,8 +11,8 @@
 export default {
   props: {
     value: String,
-    hId: String,
-    hFor: String
+    id: String,
+    labelFor: String
   },
   data () {
     return {
@@ -23,8 +23,8 @@ export default {
 
 <style scoped>
 label {
-  font-size: 1.6rem;
-  padding-top: 0.5rem;
+  font-size: 16px;
+  padding-top: 5px;
 }
 div {
   overflow: hidden;
