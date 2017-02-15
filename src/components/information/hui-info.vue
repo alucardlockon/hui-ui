@@ -1,6 +1,6 @@
 <template>
-<div class="text-right col-xs-3 col-sm-2 col-md-1 col-lg-1">
-  
+<div class="text-center col-xs-12">
+  <div class="alert alert-success">{{value}}</div>
 </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   props: {
     value: String,
     id: String,
-    for: String
+    type: String
   },
   data () {
     return {

@@ -9,7 +9,7 @@
       :placeholder="placeHolder"
       :value="value"
       @input="$emit('input', $event.target.value)"
-      @keyup.enter=""
+      @keyup.enter="goToNext()"
       >
   </div>
 </template>
@@ -30,6 +30,10 @@ export default {
   created: function () {
   },
   methods: {
+    goToNext: function () {
+      console.log(window.$('#' + this.id).parent().parent().next().find('input[type=text]'))
+      window.$('#' + this.id).parent().parent().next().find('input[type=text]').focus()
+    }
   }
 }
 </script>

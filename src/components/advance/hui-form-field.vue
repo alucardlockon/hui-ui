@@ -16,13 +16,13 @@ export default {
     HuiTextBox, HuiLabel
   },
   props: {
-    cid: String,
+    id: String,
     value: String
   },
   data () {
     return {
-      dId: this.id ? this.id : new Date().toLocaleDateString() + '_' + Math.random().toString(),
-      dValue: this.value ? this.value : new Date().toLocaleDateString() + '_' + Math.random().toString(),
+      dId: this.id ? this.id : (Math.random() * 1000000).toFixed(0).toString(),
+      dValue: this.value ? this.value : (Math.random() * 1000000).toFixed(0).toString(),
       dTextBoxValue: ''
     }
   },
@@ -30,7 +30,7 @@ export default {
   },
   computed: {
     labelId: function () {
-      return this.id + '_label'
+      return this.dId + '_label'
     }
   }
 }

@@ -1,18 +1,20 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
-  <div v-show="visible" :class="cssClass" :style="style" >
-    {{value}}
-  </div>
+<div class="nav col-xs-12" v-show="visible">
+      <ul class="nav nav-pills"> 
+          <li v-for="data in value" :class="data.active?'active':''">
+            <a :href="data.url">{{data.title}}</a>
+          </li> 
+      </ul> 
 </div>
 </template>
 
 <script>
 export default {
-  name: 'HuiTemp',
+  name: 'HuiNav',
   props: {
     value: {
-      type: String,
-      default: ''
+      type: Array,
+      default: []
     },
     visible: {
       type: Boolean,

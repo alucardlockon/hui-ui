@@ -4,7 +4,7 @@
     <hui-title value="用户注册" level="2" />
     <hui-form-field value="姓名" id="name" />
     <hui-form-field value="年龄" id="age" />
-    <hui-form-field value="性别" id="age" />
+    <hui-form-field value="性别" id="sex" />
     <hui-form-field value="密码" id="password" />
     <hui-form-field value="确认密码" id="repassword" />
     <hui-col />
@@ -18,11 +18,11 @@
     <hui-text-box valuie="123" />
     <hui-title small-text="hui-label  文本标签，已开发" level="3" align="left" />
     <hui-label value="文本A" />
-    <hui-title small-text="hui-checkbox  选项框，未开发" level="3" align="left" />
+    <hui-title small-text="hui-checkbox  选项框，已开发" level="3" align="left" />
     <hui-checkbox value="选项A" checked />
-    <hui-title small-text="hui-button  按钮，开发中" level="3" align="left" />
+    <hui-title small-text="hui-button  按钮，已开发" level="3" align="left" />
     <hui-button value="按钮A" />
-    <hui-title small-text="hui-table  表格，开发中" level="3" align="left" />
+    <hui-title small-text="hui-table  表格，已开发" level="3" align="left" />
     <hui-table dataurl="../static/json/tabledata.json" page-size="10"
       page-count="1" show-line-number="true"/>
     <hui-title small-text="hui-date-picker  日期组件，未开发" level="3" align="left" />
@@ -34,12 +34,12 @@
     <hui-title small-text="hui-select  选择列表，未开发" level="3" align="left" />
     <hui-select />
     <hui-title value="消息组件" level="2" align="left" />
-    <hui-title small-text="hui-info  边角消息通知，开发中" level="3" align="left" />
-    <hui-info />
-    <hui-title small-text="hui-alert  提示框，开发中" level="3" align="left" />
-    <hui-alert />
-    <hui-title small-text="hui-confirm  确认框，未开发" level="3" align="left" />
-    <hui-confirm />
+    <hui-title small-text="hui-info  边角消息通知，已开发" level="3" align="left" />
+    <hui-info value="显示通知"/>
+    <hui-title small-text="hui-alert  提示框，已开发" level="3" align="left" />
+    <hui-alert value="点我弹提示"/>
+    <hui-title small-text="hui-confirm  确认框，已开发" level="3" align="left" />
+    <hui-confirm value="点击弹出对话框"/>
     <hui-title small-text="hui-msg-box  信息框，未开发" level="3" align="left" />
     <hui-msg-box />
     <hui-title value="高级组件" level="2" align="left" />
@@ -47,8 +47,8 @@
     <hui-tab />
     <hui-title small-text="hui-window  窗口，未开发" level="3" align="left" />
     <hui-window />
-    <hui-title small-text="hui-nav  导航栏，未开发" level="3" align="left" />
-    <hui-nav />
+    <hui-title small-text="hui-nav  导航栏，已开发" level="3" align="left" />
+    <hui-nav :visible="true" :value="navData"/>
     <hui-title small-text="hui-tree  树形栏，未开发" level="3" align="left" />
     <hui-tree />
     <hui-title small-text="hui-form-field  表单项，由一个标签和输入框组成，已开发" level="3" align="left" />
@@ -114,7 +114,15 @@ export default {
   props: [ ],
   data () {
     return {
-      labelText: 'hey'
+      labelText: 'hey',
+      navData: [
+        { title: '首页', url: 'index.html', active: true },
+        { title: '新闻', url: 'news.html' },
+        { title: '收藏', url: 'fav.html' },
+        { title: '视频', url: 'video.html' },
+        { title: '我的', url: 'my.html' },
+        { title: '设置', url: 'settings.html' }
+      ]
     }
   }
 }
