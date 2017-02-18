@@ -23,8 +23,8 @@
     <hui-title small-text="hui-button  按钮，已开发" level="3" align="left" />
     <hui-button value="按钮A" />
     <hui-title small-text="hui-table  表格，已开发" level="3" align="left" />
-    <hui-table dataurl="../static/json/tabledata.json" page-size="10"
-      page-count="1" show-line-number="true"/>
+    <hui-table dataurl="../static/json/tabledata.json" page-size="6"
+      page-count="1" show-line-number="false"/>
     <hui-title small-text="hui-date-picker  日期组件，未开发" level="3" align="left" />
     <hui-date-picker />
     <hui-title small-text="hui-time-picker  时间组件，未开发" level="3" align="left" />

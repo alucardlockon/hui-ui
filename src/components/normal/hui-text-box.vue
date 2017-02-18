@@ -31,7 +31,6 @@ export default {
   },
   methods: {
     goToNext: function () {
-      console.log(window.$('#' + this.id).parent().parent().next().find('input[type=text]'))
       window.$('#' + this.id).parent().parent().next().find('input[type=text]').focus()
     }
   }
