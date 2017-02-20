@@ -223,5 +223,5 @@ data () {
 [bootstrap](https://github.com/twbs/bootstrap)  
 [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker)   
 [bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)
-[jquery](https://github.com/jquery/jquery)
-[Vue.js](https://github.com/vuejs/vue)
+[jquery](https://github.com/jquery/jquery)  
+[Vue.js](https://github.com/vuejs/vue)  
