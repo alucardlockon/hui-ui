@@ -222,6 +222,6 @@ data () {
 ## 使用项目
 [bootstrap](https://github.com/twbs/bootstrap)  
 [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker)   
-[bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)
+[bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)  
 [jquery](https://github.com/jquery/jquery)  
 [Vue.js](https://github.com/vuejs/vue)  
