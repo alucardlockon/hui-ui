@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <hui-toc target="app" />
     <hui-title value="Demo" align="left" />
     <hui-title value="用户注册" level="2" />
     <hui-form-field value="姓名" id="name" />
@@ -29,10 +30,10 @@
     <hui-date-picker />
     <hui-title small-text="hui-time-picker  时间组件，未开发" level="3" align="left" />
     <hui-time-picker />
-    <hui-title small-text="hui-number-picker  数组选择器，未开发" level="3" align="left" />
-    <hui-number-picker />
-    <hui-title small-text="hui-select  选择列表，未开发" level="3" align="left" />
-    <hui-select />
+    <hui-title small-text="hui-number-picker  数字选择器，已开发" level="3" align="left" />
+    <hui-number-picker :min="0" :max="10" :step="1"/>
+    <hui-title small-text="hui-select  选择列表，已开发" level="3" align="left" />
+    <hui-select :value="selectData"/>
     <hui-title value="消息组件" level="2" align="left" />
     <hui-title small-text="hui-info  边角消息通知，已开发" level="3" align="left" />
     <hui-info value="显示通知"/>
@@ -82,6 +83,7 @@ import HuiWindow from './components/advance/hui-window'
 import HuiNav from './components/advance/hui-nav'
 import HuiTree from './components/advance/hui-tree'
 import HuiFormField from './components/advance/hui-form-field'
+import HuiToc from './components/advance/hui-toc'
 
 export default {
   name: 'app',
@@ -109,7 +111,8 @@ export default {
     HuiWindow,
     HuiNav,
     HuiTree,
-    HuiFormField
+    HuiFormField,
+    HuiToc
   },
   props: [ ],
   data () {
@@ -122,6 +125,11 @@ export default {
         { title: '视频', url: 'video.html' },
         { title: '我的', url: 'my.html' },
         { title: '设置', url: 'settings.html' }
+      ],
+      selectData: [
+        {value: '1', text: '选择1'},
+        {value: '2', text: '选择2'},
+        {value: '3', text: '选择3'}
       ]
     }
   }

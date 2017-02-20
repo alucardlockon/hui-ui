@@ -1,19 +1,18 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
-  <select v-show="visible" class="form-control" 
-      :class="cssClass" :style="style" >
-      <option v-for="item in value" :value="item.value">{{item.text}}</option>
-  </select>
+<div class="col-xs-12">
+  <hui-tree :value="toc"/>
 </div>
 </template>
 
 <script>
+import HuiTree from './hui-tree'
+
 export default {
-  name: 'HuiSelect',
+  name: 'HuiTemp',
   props: {
     value: {
-      type: Array,
-      default: []
+      type: String,
+      default: ''
     },
     visible: {
       type: Boolean,
@@ -29,11 +28,17 @@ export default {
   },
   data () {
     return {
+      toc: [
+        { title: 'a', url: 'b' }
+      ]
     }
   },
   created: function () {
   },
   methods: {
+  },
+  components: {
+    HuiTree
   }
 }
 </script>

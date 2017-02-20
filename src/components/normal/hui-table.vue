@@ -1,6 +1,6 @@
 <template>
-  <div class="hui-list">
-    <table class="table table-striped table-hover">
+  <div class="hui-list table-responsive">
+    <table class="table table-striped table-hover ">
       <caption style="text-align:center"><h2>{{title}}</h2></caption>
       <thead>
         <tr>
