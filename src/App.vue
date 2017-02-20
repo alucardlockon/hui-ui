@@ -50,8 +50,8 @@
     <hui-window />
     <hui-title small-text="hui-nav  导航栏，已开发" level="3" align="left" />
     <hui-nav :visible="true" :value="navData"/>
-    <hui-title small-text="hui-tree  树形栏，未开发" level="3" align="left" />
-    <hui-tree />
+    <hui-title small-text="hui-tree  树形栏，已开发" level="3" align="left" />
+    <hui-tree :value="treeData" />
     <hui-title small-text="hui-form-field  表单项，由一个标签和输入框组成，已开发" level="3" align="left" />
     <hui-form-field value="表单A" />
   </div>
@@ -130,7 +130,26 @@ export default {
         {value: '1', text: '选择1'},
         {value: '2', text: '选择2'},
         {value: '3', text: '选择3'}
-      ]
+      ],
+      treeData: {
+        list: [
+          { title: '系统A',
+            list: [
+              { title: '系统A-1', url: 'a-1.html' }
+            ],
+            active: true
+          },
+          { title: '系统B',
+            list: [
+              { title: '系统B-1', url: 'b-1.html' },
+              { title: '系统B-2', url: 'b-2.html' },
+              { title: '功能B' }
+            ]
+          },
+          { title: '系统C', url: 'c.html' },
+          { title: '系统D', url: 'd.html' }
+        ]
+      }
     }
   }
 }
