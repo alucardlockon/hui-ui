@@ -1,9 +1,9 @@
 <template>
 <div class="col-xs-4 col-sm-4 col-md-2 col-lg-1" v-show="visible">
-  <button class="btn" data-toggle="modal" data-target="#myModal" >
+  <button class="btn" data-toggle="modal" data-target="#myModal2" >
     {{value}}
   </button>
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   	<div class="modal-dialog">
   		<div class="modal-content">
   			<div class="modal-header">
@@ -11,17 +11,18 @@
   					&times;
   				</button>
   				<h4 class="modal-title" id="myModalLabel">
-  					模态框（Modal）标题
+  					确认
   				</h4>
   			</div>
   			<div class="modal-body">
-  				在这里添加一些文本
+  				是否确定
   			</div>
   			<div class="modal-footer">
-  				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+  				<button type="button" class="btn btn-default" data-dismiss="modal">
+            取消
   				</button>
-  				<button type="button" class="btn btn-primary">
-  					提交更改
+  				<button type="button" class="btn btn-primary" data-dismiss="modal">
+  					确定
   				</button>
   			</div>
   		</div><!-- /.modal-content -->

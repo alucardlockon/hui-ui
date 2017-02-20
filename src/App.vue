@@ -10,49 +10,50 @@
     <hui-form-field value="确认密码" id="repassword" />
     <hui-col />
     <div class="col-xs-12">
-      <hui-button value="真实" icon="save" cssClass="btn-primary" />
-      <hui-button value="猛男" icon="star" />
+      <hui-button value="确定" icon="save" cssClass="btn-primary" />
+      <hui-button value="取消" icon="star" />
     </div>
     <hui-title value="组件" align="left" />
     <hui-title value="常用组件" level="2" align="left" />
-    <hui-title small-text="hui-text-box  文本框组件，已开发" level="3" align="left" />
+    <hui-title small-text="hui-text-box  文本框组件" level="3" align="left" />
     <hui-text-box valuie="123" />
-    <hui-title small-text="hui-label  文本标签，已开发" level="3" align="left" />
-    <hui-label value="文本A" />
-    <hui-title small-text="hui-checkbox  选项框，已开发" level="3" align="left" />
+    <hui-title small-text="hui-label  文本标签" level="3" align="left" />
+    <hui-label value="文本A" /> 
+    <hui-title small-text="hui-checkbox  选项框" level="3" align="left" />
     <hui-checkbox value="选项A" checked />
-    <hui-title small-text="hui-button  按钮，已开发" level="3" align="left" />
+    <hui-title small-text="hui-button  按钮" level="3" align="left" />
     <hui-button value="按钮A" />
-    <hui-title small-text="hui-table  表格，已开发" level="3" align="left" />
+    <hui-title small-text="hui-table  表格" level="3" align="left" />
     <hui-table dataurl="../static/json/tabledata.json" page-size="6"
       page-count="1" show-line-number="false"/>
-    <hui-title small-text="hui-date-picker  日期组件，已开发" level="3" align="left" />
+    <hui-title small-text="hui-date-picker  日期组件" level="3" align="left" />
     <hui-date-picker />
-    <hui-title small-text="hui-time-picker  时间组件，已开发" level="3" align="left" />
+    <hui-title small-text="hui-time-picker  时间组件" level="3" align="left" />
     <hui-time-picker />
-    <hui-title small-text="hui-number-picker  数字选择器，已开发" level="3" align="left" />
+    <hui-title small-text="hui-number-picker  数字选择器" level="3" align="left" />
     <hui-number-picker :min="0" :max="10" :step="1"/>
-    <hui-title small-text="hui-select  选择列表，已开发" level="3" align="left" />
+    <hui-title small-text="hui-select  选择列表" level="3" align="left" />
     <hui-select :value="selectData"/>
     <hui-title value="消息组件" level="2" align="left" />
-    <hui-title small-text="hui-info  边角消息通知，已开发" level="3" align="left" />
+    <hui-title small-text="hui-info  边角消息通知" level="3" align="left" />
     <hui-info value="显示通知"/>
-    <hui-title small-text="hui-alert  提示框，已开发" level="3" align="left" />
+    <hui-title small-text="hui-alert  提示框" level="3" align="left" />
     <hui-alert value="点我弹提示"/>
-    <hui-title small-text="hui-confirm  确认框，已开发" level="3" align="left" />
+    <hui-title small-text="hui-confirm  确认框" level="3" align="left" />
     <hui-confirm value="点击弹出对话框"/>
-    <hui-title small-text="hui-msg-box  信息框，未开发" level="3" align="left" />
-    <hui-msg-box />
+    <hui-title small-text="hui-msg-box  信息框" level="3" align="left" />
+    <hui-msg-box value="信息框" :buttons="['确定','取消']"
+      :evnets="msgBoxEvnets" />
     <hui-title value="高级组件" level="2" align="left" />
-    <hui-title small-text="hui-tab  标签页，未开发" level="3" align="left" />
-    <hui-tab />
-    <hui-title small-text="hui-window  窗口，未开发" level="3" align="left" />
+    <hui-title small-text="hui-tab  标签页" level="3" align="left" />
+    <hui-tab :value="navData" />
+    <hui-title small-text="hui-window  窗口" level="3" align="left" />
     <hui-window />
-    <hui-title small-text="hui-nav  导航栏，已开发" level="3" align="left" />
+    <hui-title small-text="hui-nav  导航栏" level="3" align="left" />
     <hui-nav :visible="true" :value="navData"/>
-    <hui-title small-text="hui-tree  树形栏，已开发" level="3" align="left" />
+    <hui-title small-text="hui-tree  树形栏" level="3" align="left" />
     <hui-tree :value="treeData" />
-    <hui-title small-text="hui-form-field  表单项，由一个标签和输入框组成，已开发" level="3" align="left" />
+    <hui-title small-text="hui-form-field  表单项，由一个标签和输入框组成" level="3" align="left" />
     <hui-form-field value="表单A" />
   </div>
 </template>
@@ -141,7 +142,13 @@ export default {
           },
           { title: '系统B',
             list: [
-              { title: '系统B-1', url: 'b-1.html' },
+              {
+                title: '系统B-1',
+                url: 'b-1.html',
+                list: [
+                  { title: '系统功能B12', url: 'b-12.html' }
+                ]
+              },
               { title: '系统B-2', url: 'b-2.html' },
               { title: '功能B' }
             ]
@@ -149,7 +156,15 @@ export default {
           { title: '系统C', url: 'c.html' },
           { title: '系统D', url: 'd.html' }
         ]
-      }
+      },
+      msgBoxEvnets: [
+        function () {
+          window.alert('确定')
+        },
+        function () {
+          window.alert('取消')
+        }
+      ]
     }
   }
 }

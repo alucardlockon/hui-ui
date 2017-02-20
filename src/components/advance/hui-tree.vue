@@ -1,10 +1,12 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
-  <div v-show="visible" :class="cssClass" :style="style" >
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <hui-tree-item v-for="item in value.list" :value="item"></hui-tree-item>
-      </ul>
+<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+  <div class="container" v-show="visible" :class="cssClass" :style="style" >
+    <div class="row">
+      <div id="navbar" class="span2">
+        <ul class="nav nav-pills nav-stacked">
+          <hui-tree-item v-for="item in value.list" :value="item"></hui-tree-item>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

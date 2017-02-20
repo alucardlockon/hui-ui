@@ -1,10 +1,10 @@
 <template>
 <div class="nav col-xs-12" v-show="visible">
-      <ul class="nav nav-pills"> 
-          <li v-for="data in value" :class="data.active?'active':''">
-            <a :href="data.url">{{data.title}}</a>
-          </li> 
-      </ul> 
+    <ul class="nav nav-pills"> 
+        <li v-for="data in value" :class="data.active?'active':''">
+          <a :href="data.url">{{data.title}}</a>
+        </li> 
+    </ul> 
 </div>
 </template>
 

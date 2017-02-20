@@ -15,10 +15,11 @@
     				</h4>
     			</div>
     			<div class="modal-body">
-    				在这里添加一些文本
+    				提示文本
     			</div>
     			<div class="modal-footer">
-    				<button type="button" class="btn btn-primary" data-dismiss="modal">确定
+    				<button type="button" class="btn btn-primary" data-dismiss="modal">
+              确定
     				</button>
     			</div>
     		</div><!-- /.modal-content -->
