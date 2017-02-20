@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <hui-toc target="app" />
+    <!-- <hui-toc target="app" /> -->
     <hui-title value="Demo" align="left" />
     <hui-title value="用户注册" level="2" />
     <hui-form-field value="姓名" id="name" />
@@ -26,9 +26,9 @@
     <hui-title small-text="hui-table  表格，已开发" level="3" align="left" />
     <hui-table dataurl="../static/json/tabledata.json" page-size="6"
       page-count="1" show-line-number="false"/>
-    <hui-title small-text="hui-date-picker  日期组件，未开发" level="3" align="left" />
+    <hui-title small-text="hui-date-picker  日期组件，已开发" level="3" align="left" />
     <hui-date-picker />
-    <hui-title small-text="hui-time-picker  时间组件，未开发" level="3" align="left" />
+    <hui-title small-text="hui-time-picker  时间组件，已开发" level="3" align="left" />
     <hui-time-picker />
     <hui-title small-text="hui-number-picker  数字选择器，已开发" level="3" align="left" />
     <hui-number-picker :min="0" :max="10" :step="1"/>

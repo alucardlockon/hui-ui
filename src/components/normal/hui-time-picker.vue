@@ -1,7 +1,7 @@
 <template>
 <div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
   <div v-show="visible" :class="cssClass" :style="style" >
-    {{value}}
+    <input type="text" class="form-control timepicker">
   </div>
 </div>
 </template>
@@ -31,6 +31,7 @@ export default {
     }
   },
   created: function () {
+    window.$('.timepicker').timepicker()
   },
   methods: {
   }

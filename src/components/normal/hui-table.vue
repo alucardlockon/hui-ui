@@ -1,5 +1,5 @@
 <template>
-  <div class="hui-list table-responsive">
+  <div class="hui-list table-responsive col-xs-12">
     <table class="table table-striped table-hover ">
       <caption style="text-align:center"><h2>{{title}}</h2></caption>
       <thead>
