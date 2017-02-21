@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import resource from 'vue-resource'
 Vue.use(resource)
+Vue.config.debug = true
 
 /* eslint-disable no-new */
 new Vue({
