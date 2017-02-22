@@ -1,7 +1,8 @@
 <template>
-<div>
-  <input type="text" name="text" :value="tempValue" id="text1">
-  <button class="btn btn-danger" @click="computeValue()">Press This!</button>
+<div :class="[showSize,cssClass]">
+  {{cValue}}
+  <input type="text" name="text" v-model="cValue" id="text1">
+  <button class="btn btn-default" @click="computeValue()"><slot></slot></button>
 </div>
 </template>
 
@@ -14,6 +15,12 @@ export default {
     value: {
       type: String,
       default: ''
+    },
+    showSize: {
+      type: String
+    },
+    cssClass: {
+      type: String
     }
   },
   data () {
@@ -40,6 +47,11 @@ export default {
       // for (const item of testArr) {
       //   this.tempValue += item === a ? b : c
       // }
+    }
+  },
+  computed: {
+    cValue: function () {
+      return this.a + this.b + this.tempValue
     }
   }
 }
