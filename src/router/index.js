@@ -4,6 +4,7 @@ import App from 'App'
 
 import Example from 'Example'
 import Test from 'Test'
+import Test2 from 'Test2'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/test',
       name: 'Test',
       component: Test
+    },
+    {
+      path: '/test2',
+      name: 'Test2',
+      component: Test2
     }
   ]
 })

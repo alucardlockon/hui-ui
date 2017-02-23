@@ -2,7 +2,7 @@
   <div id="app2">
     <!-- <hui-toc target="app" /> -->
     <hui-title value="Demo" align="left" />
-    <hui-title value="用户注册" level="2" />
+    <hui-title value="用户注册" level="6" />
     <hui-form-field value="姓名" id="name" />
     <hui-form-field value="年龄" id="age" />
     <hui-form-field value="性别" id="sex" />
@@ -10,7 +10,7 @@
     <hui-form-field value="确认密码" id="repassword" />
     <hui-col />
     <div class="col-xs-12">
-      <hui-button value="确定" icon="save" cssClass="btn-primary" />
+      <hui-button value="确定2" icon="edit" icon-pos="foot" cssClass="btn-primary" />
       <hui-button value="取消" icon="star" />
     </div>
     <hui-title value="组件" align="left" />
@@ -31,7 +31,7 @@
     <hui-title small-text="hui-time-picker  时间组件" level="3" align="left" />
     <hui-time-picker />
     <hui-title small-text="hui-number-picker  数字选择器" level="3" align="left" />
-    <hui-number-picker :min="0" :max="10" :step="1"/>
+    <hui-number-picker :min="0" :max="300" :step="100"/>
     <hui-title small-text="hui-select  选择列表" level="3" align="left" />
     <hui-select :value="selectData"/>
     <hui-title value="消息组件" level="2" align="left" />
