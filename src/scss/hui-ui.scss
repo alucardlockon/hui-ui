@@ -1,0 +1,13 @@
+@import "variables";
+@import "mixins";
+
+html{
+  font-size: $font-base-size;
+}
+body {
+  font-size: $font-size;
+}
+input {
+  line-height: $line-height;
+  border-radius: $line-height * 0.3;
+}

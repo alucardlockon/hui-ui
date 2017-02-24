@@ -15,6 +15,8 @@
 </template>
 
 <script>
+var $ = require('jquery')
+
 export default {
   props: {
     value: String,
@@ -31,7 +33,7 @@ export default {
   },
   methods: {
     goToNext: function () {
-      window.$('#' + this.id).parent().parent().next().find('input[type=text]').focus()
+      $('#' + this.id).parent().parent().next().find('input[type=text]').focus()
     }
   }
 }

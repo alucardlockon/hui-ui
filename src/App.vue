@@ -8,7 +8,7 @@
 </template>
 
 <script>
-
+require('scss/hui-ui.scss')
 // import Router from './router/index'
 
 export default {

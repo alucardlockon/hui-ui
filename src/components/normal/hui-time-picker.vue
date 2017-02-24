@@ -37,7 +37,7 @@ export default {
   created: function () {
   },
   mounted: function () {
-    window.$('#timepicker').timepicker()
+    // $('#timepicker').timepicker()
   },
   methods: {
   }
