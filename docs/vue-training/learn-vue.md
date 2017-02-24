@@ -43,10 +43,20 @@ var app = new Vue({
 
 #### data
 data表示该vue实例的属性，这些属性都是响应式的。  
- 
+
 #### methods
 Vue实例的方法  
+```js
+methods: {
+  add: function (a, b) {
+    return a + b
+  },
+  multi: function(a, b){
+    return a * b
+  }
+}
 
+```
 #### computed
 计算属性  
 
@@ -55,7 +65,11 @@ Vue实例的方法
 
 #### created
 Vue实例创建时  
-
+```js
+created: function () {
+  // init code here
+}
+```
 #### mounted
 Vue实例绑定到el标签所在的dom时  
 
@@ -138,9 +152,43 @@ var example1 = new Vue({
 
 #### template
 组件的模板  
+```html
+<template>
+  <div id="app2">
+    <hui-test-1 show-size="visible-xs" cssClass="col-xs-12">show_xs:小屏幕显示</hui-test-1>
+    <hui-test-1 show-size="visible-sm" cssClass="col-sm-6">show_sm:中小屏幕显示</hui-test-1>
+    <hui-test-1 show-size="visible-md" cssClass="col-md-6">show_md:中屏幕显示</hui-test-1>
+    <hui-test-1 show-size="visible-lg" cssClass="col-lg-6">show_lg:大屏幕显示</hui-test-1>
+    <div class="col-sm-3 container">
+      <label for="inputname">{{inputValue}}</label>
+      <input id="inputname" v-model="inputValue" type="text" class="form-control"/>
+    </div>
+  </div>
+</template>
+```
 
 #### components
 该组件引用的组件  
 
+```js
+export default {
+  name: 'Test',
+  components: {
+    HuiTest1
+  }
+}
+```
+
 #### props
 组件参数 
+```js
+props: {
+  value: {
+    type: String,
+    default: ''
+  },
+  showSize: {
+    type: String
+  }
+}
+```
