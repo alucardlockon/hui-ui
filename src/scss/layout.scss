@@ -1,14 +1,12 @@
 // xs
-@media (max-width:544px) {
-   @for $index from 1 through 24{
-    .h-xs-#{$index} {
-      width: 100%/24*$index;
-      float: left;
-    }
+@for $index from 1 through 24 {
+  .h-xs-#{$index} {
+    width: 100%/24*$index;
+    float: left;
   }
 }
 // sm
-@media (max-width:768px) {
+@media (min-width:768px) {
    @for $index from 1 through 24{
     .h-sm-#{$index} {
       width: 100%/24*$index;
@@ -17,7 +15,7 @@
   }
 }
 // md
-@media (max-width:920px) {
+@media (min-width:920px) {
    @for $index from 1 through 24{
     .h-md-#{$index} {
       width: 100%/24*$index;
@@ -26,7 +24,7 @@
   }
 }
 // lg
-@media (max-width:1080px) {
+@media (min-width:1080px) {
    @for $index from 1 through 24{
     .h-lg-#{$index} {
       width: 100%/24*$index;
@@ -35,7 +33,7 @@
   }
 }
 // ulg
-@media (max-width:2160px) {
+@media (min-width:2160px) {
    @for $index from 1 through 24{
     .h-ulg-#{$index} {
       width: 100%/24*$index;

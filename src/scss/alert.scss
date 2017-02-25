@@ -1,0 +1,20 @@
+// 提示
+.h-alert-success{
+  @include mixin-border-radius();
+  // @include mixin-margin();
+  // @include mixin-padding();
+  line-height: $line-height;
+  background-color: darken($color-success,10); 
+  // border: 0.1rem solid $color-dark;
+  // box-sizing:content-box;
+}
+.h-alert-danger{
+  @include mixin-border-radius();
+  // @include mixin-margin();
+  // @include mixin-padding();
+  line-height: $line-height;
+  color: $color-light;
+  background-color: darken($color-danger,10); 
+  // border: 0.1rem solid $color-dark;
+  box-sizing:content-box;
+}
