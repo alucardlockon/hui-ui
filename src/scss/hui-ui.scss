@@ -9,5 +9,31 @@ body {
 }
 input {
   line-height: $line-height;
-  border-radius: $line-height * 0.3;
+  border-radius: $line-height * 0.35;
+  border: 0.1rem solid $color-dark;
+  background-clip: padding-box;
+  &:focus {
+    border: 0.1rem solid $color-primary;
+    outline:none;
+  }
+  &:hover {
+    border: 0.1rem solid $color-primary;
+  }
+}
+
+button {
+  margin: 1px;
+  line-height: $line-height;
+  border-radius: $line-height * 0.35;
+  box-shadow: 0.1rem 0.1rem $color-dark;
+  border: 0.1rem solid $color-default;
+  background-color: $color-default;
+  &:focus {
+    border: 0.1rem solid $color-primary;
+    outline:none;
+  }
+  &:hover {
+    border: 0.1rem solid $color-light;
+    background-color: darken($color-default, 10);;
+  }
 }

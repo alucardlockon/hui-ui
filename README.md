@@ -15,7 +15,7 @@ git clone https://github.com/alucardlockon/Hui-UI.git
 ```
 
 ## 快速上手
-样式使用了bootstrap，所以在页面中需要添加bootstrap.css  
+<del>样式使用了bootstrap，所以在页面中需要添加bootstrap.css。</del>为了学习熟悉sass，已经去掉了bootstrap样式。  
 
 ```html
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
