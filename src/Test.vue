@@ -1,10 +1,6 @@
 <template>
   <div id="app2">
-    <hui-test-1 show-size="visible-xs" cssClass="h-btn">按钮A</hui-test-1>
-    <div class="col-sm-3 container">
-      <label for="inputname">{{inputValue}}</label>
-      <input id="inputname" v-model="inputValue" type="text" class="form-control"/>
-    </div>
+    <hui-test-1></hui-test-1>
   </div>
 </template>
 
@@ -19,7 +15,6 @@ export default {
   props: [ ],
   data () {
     return {
-      inputValue: ''
     }
   }
 }

@@ -1,0 +1,81 @@
+// 按钮
+.h-btn {
+  @include mixin-margin();
+  @include mixin-border-radius();
+  @include mixin-padding();
+  line-height: $line-height;
+  border: 0.1rem solid $color-light;
+  background-color: $color-light;
+  color: $color-dark;
+  &:hover {
+    background-color: darken($color-light, 10);
+    border: 0.1rem solid darken($color-light, 10);
+  }
+
+  &:active {
+    background-color: darken($color-light, 20);
+    border: 0.1rem solid darken($color-light, 20);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// 无圆角按钮
+.h-btn-nobr{
+  border-radius: 0;
+}
+
+// 全圆角按钮
+.h-btn-fullbr{
+  @include mixin-border-radius(1);
+}
+
+// 链接按钮
+.h-btn-link{
+  background-color: rgba(0,0,0,0);
+  border: 0.1rem solid darken(rgba(0,0,0,0), 20);
+  color: $color-primary;
+  text-decoration: underline;
+  &:hover {
+    background-color: darken(rgba(0,0,0,0), 10);
+    border: 0.1rem solid darken(rgba(0,0,0,0), 10);
+    color: darken($color-primary,10);
+  }
+
+  &:active {
+    background-color: darken(rgba(0,0,0,0), 20);
+    border: 0.1rem solid darken(rgba(0,0,0,0), 20);
+    color: darken($color-primary,20);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@each $theme-name in $array-color-themes {
+  .h-btn-#{$theme-name} {
+    $index: index($array-color-themes,$theme-name);
+    background-color: nth($array-colors, $index);
+    @if nth($array-colors, $index)==$color-light
+      or nth($array-colors, $index)==$color-default {
+      color: $color-dark;
+    }
+    @else {
+      color: $color-light;
+    }
+    border: 0.1rem solid nth($array-colors, $index);
+
+    &:hover {
+      background-color: darken(nth($array-colors, $index), 10);
+      border: 0.1rem solid darken(nth($array-colors, $index), 10);
+    }
+
+    &:active {
+      background-color: darken(nth($array-colors, $index), 20);
+      border: 0.1rem solid darken(nth($array-colors, $index), 20);
+    }
+  }
+}

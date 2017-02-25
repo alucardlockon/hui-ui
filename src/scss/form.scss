@@ -1,0 +1,21 @@
+// 表单控件
+
+.h-form-control {
+  @include mixin-margin();
+  @include mixin-padding();
+  line-height: $line-height;
+  @include mixin-border-radius(0.2);
+  border: 0.1rem solid $color-dark;
+  background-clip: padding-box;
+
+  &:hover {
+    border: 0.1rem solid $color-primary;
+    box-shadow: 0 0 0.8rem $color-primary;
+  }
+
+  &:focus {
+    border: 0.1rem solid $color-primary;
+    box-shadow: 0 0 0.8rem $color-primary;
+    outline: none;
+  }
+}

@@ -1,7 +1,7 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
+<div class="h-xs-4 h-sm-4 h-md-2 h-lg-1">
   <div v-show="visible" :class="cssClass" :style="style" >
-    <input id="timepicker" type="text" class="form-control timepicker">
+    <input id="timepicker" type="text" class="h-form-control timepicker">
   </div>
 </div>
 </template>

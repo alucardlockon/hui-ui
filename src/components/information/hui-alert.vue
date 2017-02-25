@@ -1,5 +1,5 @@
 <template>
-  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-1" v-show="visible">
+  <div class="h-xs-8 h-sm-8 h-md-4 h-lg-2" v-show="visible">
     <button class="btn" data-toggle="modal" data-target="#myModal" >
       {{value}}
     </button>
@@ -18,7 +18,7 @@
     				提示文本
     			</div>
     			<div class="modal-footer">
-    				<button type="button" class="btn btn-primary" data-dismiss="modal">
+    				<button type="button" class="h-btn h-btn-primary" data-dismiss="modal">
               确定
     				</button>
     			</div>

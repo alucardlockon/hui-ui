@@ -1,6 +1,6 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1" v-show="visible">
-  <button class="btn" data-toggle="modal" data-target="#myModal3" >
+<div class="h-xs-8 h-sm-8 h-md-4 h-lg-2" v-show="visible">
+  <button class="h-btn" data-toggle="modal" data-target="#myModal3" >
     {{value}}
   </button>
   <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -19,7 +19,7 @@
   			</div>
   			<div class="modal-footer">
   				<button v-for="(item,index) in buttons" type="button" 
-            class="btn" data-dismiss="modal" 
+            class="h-btn" data-dismiss="modal" 
             :class="index===0?'btn-primary':'btn-default'">
             {{item}}
   				</button>

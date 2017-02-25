@@ -1,0 +1,10 @@
+@mixin mixin-padding() {
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+}
+@mixin mixin-margin() {
+  margin: 0.1rem 0.1rem;
+}
+@mixin mixin-border-radius($p-line-height: 0.35) {
+  border-radius: $line-height * $p-line-height;
+}

@@ -1,0 +1,45 @@
+// xs
+@media (max-width:544px) {
+   @for $index from 1 through 24{
+    .h-xs-#{$index} {
+      width: 100%/24*$index;
+      float: left;
+    }
+  }
+}
+// sm
+@media (max-width:768px) {
+   @for $index from 1 through 24{
+    .h-sm-#{$index} {
+      width: 100%/24*$index;
+      float: left;
+    }
+  }
+}
+// md
+@media (max-width:920px) {
+   @for $index from 1 through 24{
+    .h-md-#{$index} {
+      width: 100%/24*$index;
+      float: left;
+    }
+  }
+}
+// lg
+@media (max-width:1080px) {
+   @for $index from 1 through 24{
+    .h-lg-#{$index} {
+      width: 100%/24*$index;
+      float: left;
+    }
+  }
+}
+// ulg
+@media (max-width:2160px) {
+   @for $index from 1 through 24{
+    .h-ulg-#{$index} {
+      width: 100%/24*$index;
+      float: left;
+    }
+  }
+}

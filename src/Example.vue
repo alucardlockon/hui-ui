@@ -9,8 +9,8 @@
     <hui-form-field value="密码" id="password" />
     <hui-form-field value="确认密码" id="repassword" />
     <hui-col />
-    <div class="col-xs-12">
-      <hui-button value="确定2" icon="edit" icon-pos="foot" cssClass="btn-primary" />
+    <div class="h-xs-24">
+      <hui-button value="确定2" icon="edit" icon-pos="foot" cssClass="h-btn-primary" />
       <hui-button value="取消" icon="star" />
     </div>
     <hui-title value="组件" align="left" />

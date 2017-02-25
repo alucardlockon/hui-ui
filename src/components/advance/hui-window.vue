@@ -1,13 +1,13 @@
 <template>
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="float:auto">
+<div class="h-xs-24 h-sm-12 h-md-8 h-lg-6" style="float:auto">
   <div v-show="visible" :class="cssClass" :style="style" >
     <div class="alert alert-warning">
-      <div class="text-left">
+      <div class="h-text-left">
       窗体
       </div>
-      <div class="text-right">
-        <button class="btn btn-primary">-</button>
-        <button class="btn btn-danger">x</button>
+      <div class="h-text-right">
+        <button class="h-btn h-btn-primary">-</button>
+        <button class="h-btn h-btn-danger">x</button>
       </div>
     </div>
     <div class="alert alert-success">

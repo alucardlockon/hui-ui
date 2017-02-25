@@ -1,6 +1,6 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
-  <select v-show="visible" class="form-control" 
+<div class="h-xs-8 h-sm-8 h-md-4 h-lg-2">
+  <select v-show="visible" class="h-form-control" 
       :class="cssClass" :style="style" >
       <option v-for="item in value" :value="item.value">{{item.text}}</option>
   </select>

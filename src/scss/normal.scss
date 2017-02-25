@@ -1,0 +1,53 @@
+// text文本
+.h-text-left{
+  text-align: left;
+}
+.h-text-right{
+  text-align: right;
+}
+.h-text-center{
+  text-align: center;
+}
+// 文本颜色
+@each $theme-name in $array-color-themes {
+  .h-text-#{$theme-name} {
+    $index: index($array-color-themes,$theme-name);
+    color: nth($array-colors, $index);
+  }
+}
+// 文本字体
+.h-text-xs{
+  font-size: $font-size*544/768;
+}
+.h-text-sm{
+  font-size: $font-size*768/768;
+}
+.h-text-md{
+  font-size: $font-size*920/768;
+}
+.h-text-lg{
+  font-size: $font-size*1080/768;
+}
+.h-text-ulg{
+  font-size: $font-size*1440/768;
+}
+
+//显示
+.h-hide{
+  display: none;
+}
+.h-show{
+  display:block;
+}
+.h-show-inline{
+  display:inline-block;
+}
+
+//背景颜色
+@each $theme-name in $array-color-themes {
+  .h-bg-#{$theme-name} {
+    $index: index($array-color-themes,$theme-name);
+    background-color: nth($array-colors, $index);
+  }
+}
+

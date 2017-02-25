@@ -1,5 +1,5 @@
 <template>
-<div class="col-xs-12">
+<div class="h-xs-24">
   <hui-tree :value="toc"/>
 </div>
 </template>

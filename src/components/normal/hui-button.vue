@@ -1,6 +1,6 @@
 <template>
-  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
-    <button class="btn btn-default" :class="cssClass" :id="id"
+  <div class="h-xs-8 h-sm-8 h-md-4 h-lg-2">
+    <button class="h-btn h-btn-default" :class="cssClass" :id="id"
         :title="value?value:''" >
         <span v-show="dIconPos === 'head'" class="glyphicon" :class="dIcon" ></span>
         {{value}}

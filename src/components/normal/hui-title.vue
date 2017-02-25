@@ -1,5 +1,5 @@
 <template>
-<div class="text-center col-xs-12" v-show="visible">
+<div class="h-text-center h-xs-24" v-show="visible">
   <h1 v-if="level === '1'" :level="level" :class="[cssClass, dAlign]" :style="style" >
     {{value}}<small v-show="smallText">{{smallText}}</small>
   </h1>

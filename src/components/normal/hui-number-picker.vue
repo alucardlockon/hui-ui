@@ -1,14 +1,14 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
+<div class="h-xs-8 h-sm-8 h-md-4 h-lg-2">
   <div v-show="visible" :class="cssClass" :style="style" >
     <div class="row">
         <div class="input-group">
             <span class="input-group-btn">
-                <button class="btn btn-default" type="button" @click="reduce()">-</button>
+                <button class="h-btn h-btn-default" type="button" @click="reduce()">-</button>
             </span>
-            <input type="text" class="form-control" :value="dValue">
+            <input type="text" class="h-form-control" :value="dValue">
             <span class="input-group-btn">
-                <button class="btn btn-primary" type="button" @click="add()">+</button>
+                <button class="h-btn h-btn-primary" type="button" @click="add()">+</button>
             </span>
         </div><!-- /input-group -->
     </div><!-- /.col-lg-6 -->

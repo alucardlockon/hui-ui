@@ -1,8 +1,8 @@
 <template>
-<div class="col-xs-12" v-show="visible">
-  <div class="col-xs-12" :class="[cssClass, cCol]" :style="style" >
+<div class="h-xs-24" v-show="visible">
+  <div class="h-xs-24" :class="[cssClass, cCol]" :style="style" >
   </div>
-  <div class="col-xs-12" :class="[cssClass, cCol]" :style="style" >
+  <div class="h-xs-24" :class="[cssClass, cCol]" :style="style" >
   </div>
 </div>
 </template>

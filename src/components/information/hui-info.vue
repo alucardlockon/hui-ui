@@ -1,5 +1,5 @@
 <template>
-<div class="text-center col-xs-12">
+<div class="h-text-center h-xs-24">
   <div class="alert alert-success">{{value}}</div>
 </div>
 </template>

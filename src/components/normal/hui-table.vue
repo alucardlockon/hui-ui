@@ -19,11 +19,11 @@
           <td>总记录数{{maxCount}}</td>
           <td>每页记录数{{v_pageSize}}</td>
           <td>当前页<input type="text" style="width:30px" v-model="v_pageCount">
-            <button class="btn btn-primary" v-on:click="showPage(v_pageCount)">跳转</button>
+            <button class="h-btn h-btn-primary" v-on:click="showPage(v_pageCount)">跳转</button>
           </td>
           <td>
-            <button class="btn btn-primary" v-on:click="prev()">上一页</button>
-            <button class="btn btn-primary" v-on:click="next()">下一页</button>
+            <button class="h-btn h-btn-primary" v-on:click="prev()">上一页</button>
+            <button class="h-btn h-btn-primary" v-on:click="next()">下一页</button>
           </td>
         </tr>
       </tfoot>

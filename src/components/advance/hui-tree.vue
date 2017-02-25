@@ -1,5 +1,5 @@
 <template>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+<div class="h-xs-6 h-sm-4 h-md-3 h-lg-2">
   <div class="container" v-show="visible" :class="cssClass" :style="style" >
     <div class="row">
       <div id="navbar" class="span2">

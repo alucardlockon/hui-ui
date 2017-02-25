@@ -1,5 +1,5 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
+<div class="h-xs-8 h-sm-8 h-md-4 h-lg-2">
   <div v-show="visible" :class="cssClass" :style="style" >
     {{value}}
   </div>

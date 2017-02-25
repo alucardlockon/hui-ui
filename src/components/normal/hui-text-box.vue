@@ -1,8 +1,8 @@
 <template>
-  <div class="col-xs-9 col-sm-4 col-md-3 col-lg-2">
+  <div class="h-xs-18 h-sm-8 h-md-6 h-lg-4">
     <input 
       type="text"
-      class="form-control" 
+      class="h-form-control" 
       :class="cssClass"
       :id="id"
       :name="name"

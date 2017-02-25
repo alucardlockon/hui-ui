@@ -1,6 +1,7 @@
 <template>
-<div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
-  <input type="checkbox" v-show="visible" :class="cssClass" :style="style"
+<div class="h-xs-8 h-sm-8 h-md-4 h-lg-2">
+  <input type="checkbox" v-show="visible" class="h-form-control" 
+    :class="cssClass" :style="style"
     :value="value" :checked="checked" />
 </div>
 </template>

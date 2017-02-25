@@ -1,5 +1,5 @@
 <template>
-<div class="col-xs-12">
+<div class="h-xs-24">
   <div v-show="visible" :class="cssClass" :style="style" >
     <ul class="nav nav-pills"> 
         <li v-for="(data,index) in value" :class="dIndex==index?'active':''">
