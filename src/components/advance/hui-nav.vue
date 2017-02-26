@@ -1,6 +1,6 @@
 <template>
-<div class="nav h-xs-24" v-show="visible">
-    <ul class="nav nav-pills"> 
+<div class="h-xs-24" v-show="visible">
+    <ul class="h-nav h-nav-pills"> 
         <li v-for="data in value" :class="data.active?'active':''">
           <a :href="data.url">{{data.title}}</a>
         </li> 

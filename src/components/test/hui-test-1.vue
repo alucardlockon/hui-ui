@@ -2,7 +2,7 @@
 <div>
   <h3>hui-ui主要样式:</h3>
   <h4>按钮h-btn:</h4>
-  <button v-for="(theme,index) in themes" :class="'h-btn h-btn-fullbr h-btn-'+theme">
+  <button v-for="(theme,index) in themes" :class="'h-btn h-btn-'+theme">
     {{names[index]}}按钮
   </button>
   <h4>表单控件h-form-control:</h4>
@@ -45,6 +45,59 @@
     失败了!<br>
     fail;<br>
     no;
+  </div>
+  <h4>表格:h-table</h4>
+  <table class="h-table">
+    <caption>caption1</caption>
+    <tr>
+      <th>th1</th>
+      <th>th2</th>
+      <th>th3</th>
+      <th>th4</th>
+    </tr>
+    <tr>
+      <td>td1</td>
+      <td>td2</td>
+      <td>td3</td>
+      <td>td4</td>
+    </tr>
+    <tr>
+      <td>td1</td>
+      <td>td2</td>
+      <td>td3</td>
+      <td>td4</td>
+    </tr>
+    <tr>
+      <td>td1</td>
+      <td>td2</td>
+      <td>td3</td>
+      <td>td4</td>
+    </tr>
+  </table>
+  <h4>导航:h-nav</h4>
+  <ul class="h-nav">
+    <li><a href="#">导航1</a></li>
+    <li><a href="#">导航2</a></li>
+    <li><a href="#">导航3</a></li>
+    <li><a href="#">导航4</a></li>
+    <li><a href="#">导航5</a></li>
+    <li><a href="#">导航6</a></li>
+  </ul>
+  <h4>模态窗:h-modal</h4>
+  <div class="h-modal">
+    <div class="h-modal-header">
+      <button type="button" class="h-close">
+				&times;
+			</button>
+      这是标题
+    </div>
+    <div class="h-modal-body">
+      这是内容
+    </div>
+    <div class="h-modal-footer">
+      <button class="h-btn h-btn-primary">确定</button>
+      <button class="h-btn h-btn-defalut">取消</button>
+    </div>
   </div>
 </div>
 </template>

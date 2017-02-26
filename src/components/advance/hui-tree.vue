@@ -1,9 +1,9 @@
 <template>
-<div class="h-xs-6 h-sm-4 h-md-3 h-lg-2">
+<div class="h-xs-6">
   <div class="container" v-show="visible" :class="cssClass" :style="style" >
     <div class="row">
-      <div id="navbar" class="span2">
-        <ul class="nav nav-pills nav-stacked">
+      <div id="h-navbar" class="span2">
+        <ul class="h-nav h-nav-pills">
           <hui-tree-item v-for="item in value.list" :value="item"></hui-tree-item>
         </ul>
       </div>

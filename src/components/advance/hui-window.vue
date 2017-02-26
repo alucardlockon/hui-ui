@@ -1,7 +1,7 @@
 <template>
 <div class="h-xs-24 h-sm-12 h-md-8 h-lg-6" style="float:auto">
   <div v-show="visible" :class="cssClass" :style="style" >
-    <div class="alert alert-warning">
+    <div class="h-alert-danger">
       <div class="h-text-left">
       窗体
       </div>
@@ -10,7 +10,7 @@
         <button class="h-btn h-btn-danger">x</button>
       </div>
     </div>
-    <div class="alert alert-success">
+    <div class="h-alert h-alert-success">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

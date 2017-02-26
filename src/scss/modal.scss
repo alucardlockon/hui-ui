@@ -1,0 +1,27 @@
+// 模态窗
+.h-modal{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:$color-default;
+  .h-modal-header{
+    color: $color-light;
+    background-color: $color-primary;
+    height: 3.5rem;
+    .h-close{
+      margin-right:0.5rem;
+      float:right;
+    }
+  }
+  .h-modal-body{
+    margin-bottom: 3rem;
+  }
+  .h-modal-footer{
+    // float: right;
+    width: 100%;
+    text-align: right;
+    button{
+      margin-right:0.5rem;
+    }
+  }
+}

@@ -1,31 +1,27 @@
 <template>
-<div class="h-xs-8 h-sm-8 h-md-4 h-lg-2" v-show="visible">
+<div class="h-xs-24" v-show="visible">
   <button class="h-btn" data-toggle="modal" data-target="#myModal3" >
     {{value}}
   </button>
-  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  	<div class="modal-dialog">
-  		<div class="modal-content">
-  			<div class="modal-header">
-  				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-  					&times;
-  				</button>
-  				<h4 class="modal-title" id="myModalLabel">
-  					确认
-  				</h4>
-  			</div>
-  			<div class="modal-body">
-  				是否确定
-  			</div>
-  			<div class="modal-footer">
-  				<button v-for="(item,index) in buttons" type="button" 
-            class="h-btn" data-dismiss="modal" 
-            :class="index===0?'btn-primary':'btn-default'">
-            {{item}}
-  				</button>
-  			</div>
-  		</div><!-- /.modal-content -->
-  	</div><!-- /.modal -->
+  <div class="h-modal" id="myModal3">
+		<div class="h-modal-header">
+      <button type="button" class="h-close">
+				&times;
+			</button>
+			<h4 class="h-modal-title" id="myModalLabel">
+				确认
+			</h4>
+		</div>
+		<div class="h-modal-body">
+			是否确定
+		</div>
+		<div class="h-modal-footer">
+			<button v-for="(item,index) in buttons" type="button" 
+        class="h-btn" data-dismiss="modal" 
+        :class="index===0?'btn-primary':'btn-default'">
+        {{item}}
+			</button>
+		</div>
   </div>
 </div>
 </template>

@@ -1,13 +1,15 @@
 <template>
 <div class="h-xs-24">
   <div v-show="visible" :class="cssClass" :style="style" >
-    <ul class="nav nav-pills"> 
-        <li v-for="(data,index) in value" :class="dIndex==index?'active':''">
-          <a @click="showTab(index)">{{data.title}}</a>
-        </li> 
-    </ul>
-    <div v-for="(data,index) in value" class="alert alert-success"
-      :class="dIndex==index?'show':'hide'">
+    <div class="h-xs-24">
+      <ul class="h-nav h-nav-pills h-nav-buttons"> 
+          <li v-for="(data,index) in value" :class="dIndex==index?'active':''">
+            <a @click="showTab(index)">{{data.title}}</a>
+          </li> 
+      </ul>
+    <div>
+    <div v-for="(data,index) in value" class="h-alert-success"
+      :class="dIndex==index?'h-show':'h-hide'">
       这是: {{data.title}}
     </div>
   </div>

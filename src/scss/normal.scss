@@ -51,3 +51,8 @@
   }
 }
 
+// 关闭
+.h-close{
+  @extend .h-btn;
+  @extend .h-btn-danger;
+}

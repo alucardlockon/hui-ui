@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <router-link to="/example" class="btn btn-primary">Example</router-link>
-    <router-link to="/test" class="btn btn-danger">Styles</router-link>
-    <router-link to="/test2" class="btn btn-default">Learn Vue</router-link>
+    <router-link to="/example" class="h-btn h-btn-primary">Example</router-link>
+    <router-link to="/test" class="h-btn h-btn-danger">Styles</router-link>
+    <router-link to="/test2" class="h-btn h-btn-default">Learn Vue</router-link>
     <router-view></router-view>
   </div>
 </template>

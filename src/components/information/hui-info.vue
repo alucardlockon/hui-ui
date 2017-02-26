@@ -1,6 +1,6 @@
 <template>
 <div class="h-text-center h-xs-24">
-  <div class="alert alert-success">{{value}}</div>
+  <div class="h-alert-success">{{value}}</div>
 </div>
 </template>
 

@@ -15,7 +15,8 @@ git clone https://github.com/alucardlockon/Hui-UI.git
 ```
 
 ## 快速上手
-<del>样式使用了bootstrap，所以在页面中需要添加bootstrap.css。</del>为了学习熟悉sass，已经去掉了bootstrap样式。  
+<del>样式使用了bootstrap，所以在页面中需要添加bootstrap.css。</del>  
+PS.为了学习熟悉sass，已经去掉了bootstrap样式。  
 
 ```html
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
@@ -219,9 +220,16 @@ data () {
 <hui-form-field value="表单A" />
 ```
 
-## 使用项目
+## 使用或参考项目
 [bootstrap](https://github.com/twbs/bootstrap)  
 [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker)   
 [bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)  
 [jquery](https://github.com/jquery/jquery)  
 [Vue.js](https://github.com/vuejs/vue)  
+
+## License
+MIT  
+
+## Email
+alucardlockon3@gmail.com  
+
