@@ -75,7 +75,7 @@
     </tr>
   </table>
   <h4>导航:h-nav</h4>
-  <ul class="h-nav">
+  <ul class="h-nav h-nav-pills h-nav-buttons">
     <li><a href="#">导航1</a></li>
     <li><a href="#">导航2</a></li>
     <li><a href="#">导航3</a></li>

@@ -8,9 +8,7 @@
   				<button type="button" class="h-close">
   					&times;
   				</button>
-  				<h4 class="h-modal-title" id="myModalLabel">
-  					提示
-  				</h4>
+  				提示
   			</div>
   			<div class="h-modal-body">
   				提示文本

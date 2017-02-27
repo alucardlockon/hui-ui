@@ -8,9 +8,7 @@
       <button type="button" class="h-close">
 				&times;
 			</button>
-			<h4 class="modal-title" id="myModalLabel">
-				确认
-			</h4>
+			确认
 		</div>
 		<div class="h-modal-body">
 			是否确定
