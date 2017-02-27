@@ -2,29 +2,42 @@
   width: 100%;
   border-right: 0.1rem solid $color-dark;
   border-top: 0.1rem solid $color-dark;
-  border-spacing: 0rem;
-  caption{
+  border-spacing: 0;
+
+  caption {
     @extend .h-text-md;
   }
-  tr{
-    &:hover td{
+
+  tr {
+    &:hover td {
       background-color: darken($color-light, 5);
     }
-    &:hover th{
+
+    &:hover thead,
+    tfoot {
       background-color: transparent;
     }
-    th{
-      padding: .75rem;
+
+    th {
+      padding: 0.75rem;
       border-left: 0.1rem solid $color-dark;
       border-bottom: 0.1rem solid $color-dark;
-      &:hover{
-        background-color: rgba(0,0,0,0);
-      }
+      background-color: $color-default;
     }
-    td{
-      padding: .5rem;
+
+    td {
+      padding: 0.5rem;
       border-left: 0.1rem solid $color-dark;
       border-bottom: 0.1rem solid $color-dark;
     }
+  }
+}
+
+.h-table-stripe {
+  // &:nth-child(odd){
+  //   background-color: $color-dark;
+  // }
+  tr:nth-of-type(odd) {
+    background-color: $color-light;
   }
 }

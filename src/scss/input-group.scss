@@ -1,0 +1,18 @@
+// 输入控件组
+
+.h-input-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  .h-form-control {
+    position: relative;
+  }
+}
+
+.h-input-group-btn {
+  display: flex;
+  white-space: nowrap;
+  @include mixin-border-radius();
+}

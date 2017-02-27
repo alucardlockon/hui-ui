@@ -47,7 +47,7 @@
     no;
   </div>
   <h4>表格:h-table</h4>
-  <table class="h-table">
+  <table class="h-table h-table-stripe">
     <caption>caption1</caption>
     <tr>
       <th>th1</th>
@@ -96,8 +96,18 @@
     </div>
     <div class="h-modal-footer">
       <button class="h-btn h-btn-primary">确定</button>
-      <button class="h-btn h-btn-defalut">取消</button>
+      <button class="h-btn h-btn-default">取消</button>
     </div>
+  </div>
+  <h4>输入控件组:h-input-group</h4>
+  <div class="h-input-group">
+    <span class="input-group-btn">
+        <button class="h-btn h-btn-danger" type="button">-</button>
+    </span>
+    <input type="text" class="h-form-control">
+    <span class="h-input-group-btn">
+        <button class="h-btn h-btn-primary" type="button">+</button>
+    </span>
   </div>
 </div>
 </template>

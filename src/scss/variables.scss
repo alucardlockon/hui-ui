@@ -4,13 +4,13 @@ $line-height: 2.8rem !default;
 $default-width: 5rem !default;
 
 //colors
-$color-dark: rgb(40, 42, 39);
-$color-light: rgb(233, 240, 234);
+$color-dark: rgb(40, 40, 40);
+$color-light: rgb(240, 240, 240);
 $color-default: rgb(203, 203, 203);
-$color-primary: rgb(37, 120, 231);
-$color-success: rgb(120, 215, 138);
-$color-warning: rgb(231, 156, 87);
-$color-danger: rgb(217, 65, 70);
+$color-primary: rgb(40, 120, 230);
+$color-success: rgb(120, 215, 140);
+$color-warning: rgb(230, 155, 90);
+$color-danger: rgb(220, 65, 70);
 
 //arrays
 $array-colors: $color-dark $color-light $color-default $color-primary $color-success $color-warning $color-danger;

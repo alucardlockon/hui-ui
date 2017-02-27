@@ -1,18 +1,21 @@
 .h-nav{
   line-height: $line-height;
   list-style-type: none;
-  clear: both;
-  li a{
-    @extend .h-btn;
-    @extend .h-btn-link;
+  // clear: both;
+  li{
+    a{
+      @extend .h-btn;
+      @extend .h-btn-link;
+    }  
   }
 }
 
 .h-nav-pills{
-  width: 100%;
+  // width: 100%;
   height: $line-height * 1.2;
   li{
     float: left;
+    margin-left: -0.3rem;
   }
 }
 

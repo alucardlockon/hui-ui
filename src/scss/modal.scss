@@ -3,7 +3,7 @@
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  background-color:$color-default;
+  background-color:$color-light;
   // border: 0.2rem solid $color-dark;
   box-shadow: .2rem .2rem 0.8rem lighten($color-dark,20);
   @include mixin-border-radius();
