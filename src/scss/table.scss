@@ -7,8 +7,11 @@
     @extend .h-text-md;
   }
   tr{
-    &:hover{
+    &:hover td{
       background-color: darken($color-light, 5);
+    }
+    &:hover th{
+      background-color: transparent;
     }
     th{
       padding: .75rem;
