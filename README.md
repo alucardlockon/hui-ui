@@ -226,6 +226,7 @@ data () {
 [bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)  
 [jquery](https://github.com/jquery/jquery)  
 [Vue.js](https://github.com/vuejs/vue)  
+[lodash](https://github.com/lodash/lodash)  
 
 ## License
 MIT  
