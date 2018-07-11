@@ -1,3 +1,4 @@
+@import "variables";
 // xs
 @for $index from 1 through 24 {
   .h-xs-#{$index} {

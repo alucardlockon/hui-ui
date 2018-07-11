@@ -2,12 +2,12 @@
 <div class="h-xs-24">
   <div v-show="visible" :class="cssClass" :style="style" >
     <div class="h-xs-24">
-      <ul class="h-nav h-nav-pills h-nav-buttons"> 
+      <ul class="h-nav h-nav-pills h-nav-buttons">
           <li v-for="(data,index) in value" :class="dIndex==index?'active':''">
             <a @click="showTab(index)">{{data.title}}</a>
-          </li> 
+          </li>
       </ul>
-    <div>
+    </div>
     <div v-for="(data,index) in value" class="h-alert-success"
       :class="dIndex==index?'h-show':'h-hide'">
       这是: {{data.title}}

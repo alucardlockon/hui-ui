@@ -2,7 +2,9 @@
 
 > 我的Vue.js 2.0 网页UI组件。
 
-注：本项目由个人开发，仅为了熟悉vue而开发，组件较简单，并不适合真实的网页开发。  
+[![Build Status](https://travis-ci.org/alucardlockon/hui-ui.svg?branch=master)](https://travis-ci.org/alucardlockon/hui-ui)
+
+注：本项目由个人开发，仅为了熟悉vue而开发，组件较简单，并不适合真实的网页开发。
 
 ## 文档
 
@@ -15,8 +17,8 @@ git clone https://github.com/alucardlockon/Hui-UI.git
 ```
 
 ## 快速上手
-<del>样式使用了bootstrap，所以在页面中需要添加bootstrap.css。</del>  
-PS.为了学习熟悉sass，已经去掉了bootstrap样式。  
+<del>样式使用了bootstrap，所以在页面中需要添加bootstrap.css。</del>
+PS.为了学习熟悉sass，已经去掉了bootstrap样式。
 
 ```html
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
@@ -25,7 +27,7 @@ PS.为了学习熟悉sass，已经去掉了bootstrap样式。
 ### 引入hui-ui
 
 ```html
-<script type="text/javascript" src="hui-ui.js" > </script>  
+<script type="text/javascript" src="hui-ui.js" > </script>
 ```
 ### 运行&构建
 
@@ -49,56 +51,56 @@ npm run build
 ```
 
 ### 常用组件
-#### 文本框组件 hui-text-box 
+#### 文本框组件 hui-text-box
 
 ```html
 <hui-text-box valuie="123" />
 ```
 
-#### 文本标签 hui-label  
+#### 文本标签 hui-label
 
 ```html
-<hui-label value="文本A" /> 
+<hui-label value="文本A" />
 ```
 
-#### 选项框 hui-checkbox  
+#### 选项框 hui-checkbox
 
 ```html
 <hui-checkbox value="选项A" checked />
 ```
 
-#### 按钮 hui-button  
+#### 按钮 hui-button
 
 ```html
 <hui-button value="按钮A" />
 ```
 
-#### 表格 hui-table  
+#### 表格 hui-table
 
 ```html
 <hui-table dataurl="../static/json/tabledata.json" page-size="6"
   page-count="1" show-line-number="false"/>
 ```
-  
-#### 日期组件 hui-date-picker  
+
+#### 日期组件 hui-date-picker
 
 ```html
 <hui-date-picker />
 ```
-  
-#### 时间组件 hui-time-picker  
+
+#### 时间组件 hui-time-picker
 
 ```html
 <hui-time-picker />
 ```
-  
-#### 数字选择器 hui-number-picker  
+
+#### 数字选择器 hui-number-picker
 
 ```html
 <hui-number-picker :min="0" :max="10" :step="1"/>
 ```
-  
-#### 选择列表 hui-select  
+
+#### 选择列表 hui-select
 
 ```html
 <hui-select :value="selectData"/>
@@ -117,25 +119,25 @@ data () {
 ```
 
 ### 消息组件
-#### 消息通知 hui-info  
+#### 消息通知 hui-info
 
 ```html
 <hui-info value="显示通知"/>
 ```
-  
-#### 提示框 hui-alert  
+
+#### 提示框 hui-alert
 
 ```html
 <hui-alert value="点我弹提示"/>
 ```
 
-#### 确认框 hui-confirm  
+#### 确认框 hui-confirm
 
 ```html
 <hui-confirm value="点击弹出对话框"/>
 ```
 
-#### 信息框 hui-msg-box  
+#### 信息框 hui-msg-box
 
 ```html
 <hui-msg-box value="信息框" :buttons="['确定','取消']"
@@ -143,19 +145,19 @@ data () {
 ```
 
 ### 高级组件
-#### 标签页 hui-tab  
+#### 标签页 hui-tab
 
 ```html
 <hui-tab :value="navData" />
 ```
- 
-#### 窗口 hui-window  
+
+#### 窗口 hui-window
 
 ```html
 <hui-window />
 ```
 
-#### 导航栏 hui-nav  
+#### 导航栏 hui-nav
 
 ```html
 <hui-nav :visible="true" :value="navData"/>
@@ -176,7 +178,7 @@ data () {
 }
 ```
 
-#### 树形栏 hui-tree  
+#### 树形栏 hui-tree
 
 ```html
 <hui-tree :value="treeData" />
@@ -214,23 +216,23 @@ data () {
 }
 ```
 
-#### 表单组合项 hui-form-field  
+#### 表单组合项 hui-form-field
 
 ```html
 <hui-form-field value="表单A" />
 ```
 
 ## 使用或参考项目
-[bootstrap](https://github.com/twbs/bootstrap)  
-[bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker)   
-[bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)  
-[jquery](https://github.com/jquery/jquery)  
-[Vue.js](https://github.com/vuejs/vue)  
-[lodash](https://github.com/lodash/lodash)  
+[bootstrap](https://github.com/twbs/bootstrap)
+[bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker)
+[bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)
+[jquery](https://github.com/jquery/jquery)
+[Vue.js](https://github.com/vuejs/vue)
+[lodash](https://github.com/lodash/lodash)
 
 ## License
-MIT  
+MIT
 
 ## Email
-alucardlockon3@gmail.com  
+alucardlockon3@gmail.com
 

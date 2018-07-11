@@ -1,12 +1,10 @@
 <template>
 <div :class="[showSize,cssClass]">
-  
+
 </div>
 </template>
 
 <script>
-var $ = require('jquery')
-
 export default {
   name: 'HuiTest2',
   props: {

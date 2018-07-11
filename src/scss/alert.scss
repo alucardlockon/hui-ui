@@ -1,10 +1,13 @@
+@import "mixins";
+@import "variables";
+
 // 提示
 .h-alert-success{
   @include mixin-border-radius();
   // @include mixin-margin();
   // @include mixin-padding();
   line-height: $line-height;
-  background-color: darken($color-success,10); 
+  background-color: darken($color-success,10);
   // border: 0.1rem solid $color-dark;
   // box-sizing:content-box;
   box-shadow: 0rem 0.2rem 0.5rem $color-dark;
@@ -15,7 +18,7 @@
   // @include mixin-padding();
   line-height: $line-height;
   color: $color-light;
-  background-color: darken($color-danger,10); 
+  background-color: darken($color-danger,10);
   // border: 0.1rem solid $color-dark;
   // box-sizing:content-box;
   box-shadow: 0rem 0.2rem 0.5rem $color-dark;

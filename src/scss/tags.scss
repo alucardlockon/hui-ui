@@ -1,4 +1,7 @@
 // 标题
+@import "mixins";
+@import "variables";
+
 $size : 2.5rem 2.2rem 1.8rem 1.5rem 1.2rem 1rem;
 @for $index from 1 through 6 {
   h#{$index}{

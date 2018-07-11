@@ -1,3 +1,6 @@
+@import "mixins";
+@import "variables";
+
 // 按钮
 .h-btn {
   @include mixin-margin();

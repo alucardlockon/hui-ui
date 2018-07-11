@@ -1,4 +1,8 @@
 // text文本
+@import "mixins";
+@import "variables";
+@import "button";
+
 .h-text-left{
   text-align: left;
 }

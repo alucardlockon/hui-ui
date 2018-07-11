@@ -1,3 +1,7 @@
+@import "mixins";
+@import "variables";
+@import "normal";
+
 .h-table {
   width: 100%;
   border-right: 0.1rem solid $color-dark;
